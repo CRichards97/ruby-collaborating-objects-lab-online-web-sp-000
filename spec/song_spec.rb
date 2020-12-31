@@ -50,7 +50,8 @@ describe 'Song' do
     new_instance = Song.new_by_filename(file_name)
     expect(new_instance.artist.name).to eq('Michael Jackson')
     puts "here are the arists:"
-    puts Artist.all
+    puts Artist.all[0].name
+puts Artist.all[1].name
     expect(Artist.all.size).to eq(1)
     expect(Artist.all.first.songs.empty?).to eq(false)
   end
