@@ -1,5 +1,5 @@
 describe 'Song' do
-  
+
   before(:example) {
     Song.class_variable_set(:@@all, [])
   }
@@ -75,5 +75,3 @@ describe 'Song' do
     end
   end
 end
-
-
