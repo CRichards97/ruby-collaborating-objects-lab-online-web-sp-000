@@ -54,7 +54,7 @@ describe 'Song' do
     expect(Artist.all.size).to eq(1)
     expect(Artist.all.first.songs.empty?).to eq(false)
   end
-
+end
   describe '#artist_name=' do
     it "accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute" do
       Artist.class_variable_set("@@all",[])
